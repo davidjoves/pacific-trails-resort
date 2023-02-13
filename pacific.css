@@ -1,0 +1,32 @@
+body
+{
+    background-color: #fff; /*bgc#fff shortcut */
+    color: #555; /*c#fff shortcut*/
+}
+header
+{
+    background-color: #002171;/*bgc#002171 shortcut */
+    color: #fff; /*c#fff shortcut*/
+}
+
+nav
+{
+    background-color: #bbdefb; /*bgc#bbdefb shortcut*/
+}
+h1 
+{
+    margin-bottom: 0; /*mb0*/
+}
+h2
+{
+    color: #1976d2; /*c#19762d2 shortcut */
+}
+dt
+{
+    color: #002171; /*bgc#002171 shortcut */
+}
+
+.resort
+{
+    color: #1976d2; /*c#19762d2 shortcut */
+}

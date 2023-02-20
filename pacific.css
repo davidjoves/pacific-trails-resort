@@ -1,28 +1,65 @@
 body
 {
-    background-color: #fff; /*bgc#fff shortcut */
+    background-color: #90c7e3; /*bgc#90c7e3 shortcut */
+    background-image: linear-gradient(to bottom, #fff, #90c7e3);
+    background-repeat: no-repeat;
     color: #555; /*c#fff shortcut*/
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* ffa shortcut */
+}
+#wrapper
+{
+    background-color: #fff;
+    box-shadow: 3px 3px 3px #333;
+    margin: auto;
+    min-width: 960px;
+    max-width: 2048px;
+    width: 80%;
 }
 header
 {
     background-color: #08082C;/*bgc#002171 shortcut */
-    color: #fff; /*c#fff shortcut*/
     background-image: url(images/sunset.jpg); /*bgi shortcut*/
     background-position: right; /*bgdp shortcut*/
     background-repeat: no-repeat; /*bgr shortcut*/
-    line-height: 400%; /*lh400% shortcut*/
-    text-indent: 1em; /* texi shortcut */
+    color: #fff; /*c#fff shortcut*/
+    height: 60px; /*h60*/
+    padding-top: 15px; /*pt15*/
+    text-align: center; /*tac*/
 }
 
 nav
 {
-    background-color: #bbdefb; /*bgc#bbdefb shortcut*/
+    background-color: #fff; /*bgc#bbdefb shortcut*/
     font-weight: bold; /*fwb shortcut*/ 
+    padding: 1em;
+    text-align: center;
 }
+ul 
+{
+    text-align: center;
+    list-style-position: inside;
+}
+
+main
+{
+    padding: 1px 20px 20px;
+    display: block;
+}
+
 nav a 
 {
     text-decoration: none; /*txd shortcut*/
+}
+main
+{
+    padding: 1px 20px 20px;
+    display: block;
+}
+
+h1 
+{
+    margin-bottom: 0; /*mb0*/
+    margin-top: 0; /*mt0*/
 }
 
 h1,
@@ -33,13 +70,11 @@ footer
     font-family: Georgia,"Times New Roman", serif; /*fft shortcut*/
 }
 
-h1 
-{
-    margin-bottom: 0; /*mb0*/
-}
+
 h2
 {
     color: #1976d2; /*c#19762d2 shortcut */
+    text-shadow: 1px 1px #404040;
 }
 h3
 {
@@ -56,6 +91,7 @@ footer
 {
     font-size: 75%; /* fz75% shortcut */
     font-style: italic; /*fsi shortcut */
+    padding: 2em;
     text-align: center; /*txa shortcut */
 }
 
@@ -69,3 +105,28 @@ footer
 {
     font-size: 90%;
 }
+#homehero
+{
+    background-image: url(images/coast.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*bgz100%100%*/
+    height: 300px; /*h300 */
+}
+#yurthero
+{
+    background-image: url(images/yurt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*bgz100%100%*/
+    height: 300px; /*h300 */
+}
+#trailhero
+{
+    background-image: url(images/trail.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*bgz100%100%*/
+    height: 300px; /*h300 */
+}
+
+
+
+    

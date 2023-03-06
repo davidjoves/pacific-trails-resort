@@ -49,12 +49,6 @@ main {
   overflow: auto; /*ova*/
 }
 
-section {
-  padding-left: 2em; /*pl2em*/
-  padding-right: 2em; /*pr2em*/
-  width: 33%;
-}
-
 nav ul {
   font-size: 1.2em; /*fz1.2em*/
   list-style-type: none; /*listn*/
@@ -80,11 +74,6 @@ nav a:visited {
 
 nav a:hover {
   color: #a52a2a;
-}
-
-main {
-  padding: 1px 20px 20px;
-  display: block;
 }
 
 h1 {

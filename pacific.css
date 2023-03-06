@@ -173,6 +173,11 @@ textarea {
   margin-bottom: 0.5em;
 }
 
+input[type="submit"] {
+  grid-column: 2/3;
+  width: 9em;
+}
+
 @media (max-width: 600px) {
   header {
     background-image: none;
@@ -265,10 +270,7 @@ textarea {
     max-width: 30em;
     width: 60%;
   }
-  input[type="submit"] {
-    grid-column: 2 / 3;
-    width: 9em;
-  }
+ 
 }
 
 @media (min-width: 1024px) {

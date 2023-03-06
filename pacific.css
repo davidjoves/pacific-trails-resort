@@ -174,32 +174,43 @@ tr:nth-last-of-type(odd) {
   background-color: #ffcd6f;
 }
 
+form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+input,
+textarea {
+  margin-bottom: 0.5em;
+}
+
 @media (max-width: 600px) {
   header {
     background-image: none;
   }
-  #homehero,
-  #yurthero,
-  #trailhero {
-    background-size: auto;
+  #home-hero,
+  #yurt-hero,
+  #trail-hero,
+  #about-us-hero {
+    background-size: cover;
   }
-
   #special table {
-    display: block; /*db*/
-    border-bottom: none; /*bb:n*/
+    display: block;
+    border-bottom: none;
   }
   #special td,
-  #special table {
+  #special th {
     display: block;
   }
   #special thead {
     display: none;
   }
+
   td.package::before {
     content: "Package:";
   }
   td.description::before {
-    content: "Discription:";
+    content: "Description:";
   }
   td.nights::before {
     content: "Nights:";
@@ -212,39 +223,62 @@ tr:nth-last-of-type(odd) {
   td.nights,
   td.cost {
     padding-left: 35%;
-    position: relative; /*pos:r*/
-    text-align: left; /*ta:l*/
+    position: relative;
+    text-align: left;
     font-size: 4vw;
   }
-
   td::before {
-    position: absolute; /*pos:a*/
-    top: 6px; /*t6*/
-    left: 0.5em; /*l.5*/
-    font-weight: bold; /*fwb*/
-    color: #1876d2;
+    position: absolute;
+    top: 10px;
+    left: 0.5em;
+    font-weight: bold;
+    color: #1976d2;
   }
   td:last-of-type {
     border-bottom: 2px solid #1b69b2;
   }
+  #gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .column-half {
+    width: 100%;
+  }
+  .flex {
+    display: block;
+  }
+  .column-quarter {
+    width: 100%;
+  }
 }
 @media (min-width: 600px) {
   nav ul {
-    display: flex; /*df*/
-    flex-direction: row; /*fdr*/
-    flex-wrap: nowrap; /*flw*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
   }
   nav li {
     border-bottom: none;
   }
   .flow {
-    display: flex; /*df*/
-    flex-direction: row; /*fdr*/
+    display: flex;
+    flex-direction: row;
   }
   section {
     flex: 1;
     margin-right: 1em;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 6em 1fr;
+    gap: 1em;
+    max-width: 30em;
+    width: 60%;
+  }
+  input[type="submit"] {
+    grid-column: 2 / 3;
+    width: 9em;
   }
 }
 

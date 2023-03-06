@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pacific Trails Resort a relaxing and beautiful getaway, immerse yourself in nature">
+    <title>Pacific Trails Resort</title>
+    <link href="pacific.css" rel="stylesheet">
+</head>
+<div id="wrapper">
+    <body>
+    <header>
+        <h1><a href="index.html">Pacific Trails Resort</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Yurts.html">Yurts</a></li>
+            <li><a href="Activities.html">Activities</a></li>
+            <li><a href="Reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+    <div id="homehero"></div>
+    <main>
+        <h2> Reservations at Pacific Trails</h2>
+        <h3> Contact Us Today!</h3>
+        <p>Required fields are marked with an element</p>
+        <form action="https://webdevbasics.net/scripts/pacific.php" method="post">
+            <label for="FirstName">*First Name:</label>
+            <input type="text" name="First Name" id="firstname" required="required"></input>
+            <label for="LastName">*Last Name:</label>
+            <input type="text" name="Last Name" id="LastName" required="required"></input>
+            <label for="email">*Email:</label>
+            <input type="email" name="email" id="email" required="required"></input>
+            <label for="Phone">*Phone:</label>
+            <input type="Phone" name="Phone" id="Phone" maxlength="12"></input>
+            <label for="date">*Date:</label>
+            <input type="date" name="date" id="date"></input>
+            <label for="nights">*Nights:</label>
+            <input type="number" name="nights" id="nights" min="1"max="14"></input>
+            <label for="comments">*Comments:</label>
+            <textarea type="comments" rows="8" cols="30" value="Submit"></textarea>
+            <input value="submit" name="submit" id="submit" required="required"></input>
+        </form>
+        <div id="contact">
+            <span class="resort"> Pacific Trails Resort </span> <br>
+            12010 Pacific Trails Road<br>
+            Zephyr, CA 95555<br>
+            <br>
+            888-555-5555<br>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <small><i> Copyright &copy; 2020 Pacific Trails Resort<br> </i></small>
+        <a href="mailto:adamnannetti@my.wctc.edu"> anannetti2@my.wctc.edu</a>
+    </footer>
+    </body>
+</div>
+</html>

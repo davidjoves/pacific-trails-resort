@@ -326,9 +326,6 @@ video {
     flex: 1;
     margin-right: 1em;
   }
-  .grid {
-    grid-template-columns: (2, 1fr);
-  }
 
   form {
     display: grid;
@@ -393,9 +390,6 @@ video {
     }
     #gallery {
       grid-template-columns: repeat(3, 1fr);
-    }
-    .grid {
-      grid-template-columns: (2, 1fr);
     }
   }
 }

@@ -138,6 +138,13 @@ footer {
   height: 300px; /*h300 */
 }
 
+#about-hero {
+  background-image: url(images/coast.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /*bgz100%100%*/
+  height: 300px; /*h300 */
+}
+
 table {
   border-bottom: 1px solid #1976d2;
   border-collapse: separate;
@@ -196,6 +203,41 @@ video {
   text-align: center;
   width: 100%;
 }
+#owner {
+  width: 75%;
+  margin: auto;
+}
+
+#owner img {
+  width: 100%;
+}
+#rob {
+  width: 80%;
+  font-style: italic;
+  font-weight: bold;
+}
+#rob img {
+  width: 120%;
+}
+
+#team {
+  width: 100%;
+  margin: auto;
+}
+#team img {
+  width: 100%;
+  margin: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
 
 @media (max-width: 600px) {
   header {
@@ -204,7 +246,7 @@ video {
   #home-hero,
   #yurt-hero,
   #trail-hero,
-  #about-us-hero {
+  #about-hero {
     background-size: cover;
   }
   #special table {
@@ -253,6 +295,9 @@ video {
   #gallery {
     grid-template-columns: repeat(1, 1fr);
   }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .column-half {
     width: 100%;
   }
@@ -281,6 +326,9 @@ video {
     flex: 1;
     margin-right: 1em;
   }
+  .grid {
+    grid-template-columns: (2, 1fr);
+  }
 
   form {
     display: grid;
@@ -300,7 +348,7 @@ video {
     margin: 0 auto;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   #wrapper {
     margin: auto; /*m:a*/
     width: 80%;
@@ -345,6 +393,9 @@ video {
     }
     #gallery {
       grid-template-columns: repeat(3, 1fr);
+    }
+    .grid {
+      grid-template-columns: (2, 1fr);
     }
   }
 }
